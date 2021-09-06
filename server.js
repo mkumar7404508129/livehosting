@@ -12,6 +12,7 @@ var clientResponseRef;
 app.get('/*',(req,res)=>{
     
     var pathname = uri.parse(req.url).pathname;
+    console.log("path: "+pathname)
     
     var obj ={
         pathname : pathname,
@@ -23,7 +24,9 @@ app.get('/*',(req,res)=>{
 })
 
 app.post('/*',(req,res)=>{
+   
     var pathname = uri.parse(req.url).pathname;
+    console.log("path: "+pathname)
     
     var obj ={
         pathname : pathname,
